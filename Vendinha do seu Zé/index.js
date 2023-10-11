@@ -6,7 +6,8 @@ const connection = require("./database/database");
 const Produto = require('./produtos/Produto')
 const ProdutosController = require ("./produtos/ProdutoController");
 
-app.use("/, pro")
+app.use('/', ProdutosController );
+
 connection
     .authenticate()
     .then(() => {
